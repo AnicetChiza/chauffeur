@@ -4,6 +4,8 @@
 section{
     .document-content{
         width: 70%;
+        height: 80vh;
+        overflow: auto;
         gap: 20px;
         margin: auto;
         margin-top: 15px;
