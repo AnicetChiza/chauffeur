@@ -20,15 +20,17 @@ header{
         width: 90%;
         padding: 15px;
         @include display-flex;
+        align-items: center;
         justify-content: space-between;
         position: fixed;
-        z-index: 10;
         top: 60px;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: var(--deepgreen);
         .logo{
-            gap: 8px;@include display-flex;
+            gap: 8px;
+            @include display-flex;
+            align-items: center;
             justify-content: none;
             i{
                 padding: 10px;
@@ -40,6 +42,42 @@ header{
                 color: var(--white);
                 span{
                     color: var(--yellow);
+                }
+            }
+        }
+        .menu{
+            display: none;
+            .menu-icons{
+                color: var(--deepgreen);
+                padding: 8px 8px;
+                border-radius: 50%;
+                background-color: var(--yellow);
+            }
+            .menu-container{
+                position: absolute;
+                top: 70px;
+                right: 1px;
+                width: 100%;
+                transition: 1s;
+                margin-top: -200%;
+                background-color: var(--deepgreen);
+                @include display-flex;
+                ul{
+                    width: 100%;
+                    li{
+                        list-style: none;
+                        color: var(--deepgreen);
+                        text-align: center;
+                        padding: 15px;
+                        border-bottom: 1px solid var(--yellow);
+                        a{
+                            color: var(--white);
+                            text-decoration: none;
+                            &:hover{
+                                color: var(--yellow);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -105,8 +143,9 @@ footer{
         display: none;
     }
     header{
-        .header-items{
-            .button{
+        
+        .header-content{
+            .header-items{
                 display: none;
             }
             .menu{
