@@ -15,6 +15,7 @@ header{
         width: 100%;
         padding: 30px;
         background-color: var(--yellow);
+        
     }
     .header-content{
         width: 90%;
@@ -87,7 +88,7 @@ header{
 section{
     display: grid;
     grid-template-columns: 20% auto;
-    margin-top: 5px;
+    margin-top: 40px;
 }
 nav{
     padding: 10px 20px;
