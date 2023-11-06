@@ -20,67 +20,39 @@ body {
 
 header .empty-content {
   width: 100%;
-  padding: 25px;
+  padding: 30px;
   background-color: var(--yellow);
 }
-header .header-items {
+header .header-content {
   width: 90%;
   padding: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  margin-top: -25px;
+  position: fixed;
+  z-index: 10;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--deepgreen);
 }
-header .header-items div {
+header .header-content .logo {
+  gap: 8px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 4px;
+  justify-content: none;
 }
-header .header-items div h4 {
-  color: var(--white);
-}
-header .header-items div h4 span {
-  color: var(--yellow);
-}
-header .header-items div i {
+header .header-content .logo i {
   padding: 10px;
-  color: var(--deepgreen);
   border-radius: 50%;
+  color: var(--deepgreen);
   background-color: var(--yellow);
 }
-header .header-items .menu {
-  display: none;
-}
-header .header-items .menu .menu-container {
-  position: absolute;
-  top: 95px;
-  right: 10px;
-  width: 60%;
-  height: 50vh;
-  transition: 1s;
-  width: 100%;
-  margin-top: -200%;
-  background-color: var(--deepgreen);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-header .header-items .menu .menu-container ul li {
-  list-style: none;
-  margin-bottom: 25px;
-  color: var(--deepgreen);
-  padding: 8px 12px;
-  border: 1px solid var(--yellow);
-}
-header .header-items .menu .menu-container ul li a {
+header .header-content .logo h4 {
   color: var(--white);
-  text-decoration: none;
+}
+header .header-content .logo h4 span {
+  color: var(--yellow);
 }
 
 /**********************************************/
