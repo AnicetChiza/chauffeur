@@ -5,6 +5,7 @@
 body{
     width: 100%;
     margin: auto;
+    height: 100vh;
     font-family: u.$font-Monserat;
     background-color: var(--background);
 }
@@ -51,11 +52,10 @@ header{
                 right: 10px;
                 width: 60%;
                 height: 50vh;
-                margin: auto;
-                transition: 1s ease-in-out;
-                margin-right: 200%;
+                transition: 1s;
+                width: 100%;
+                margin-top: -200%;
                 background-color: var(--deepgreen);
-                border-top-left-radius: 10px;
                 @include display-column;
                 justify-content: center;
                 align-items: center;
@@ -160,7 +160,7 @@ footer{
                     display: initial;
                 }
                 .menu-mobile{
-                    margin-right: 0;
+                    margin-top: 0;
                 }
             }
         }
