@@ -15,7 +15,6 @@ header{
         width: 100%;
         padding: 30px;
         background-color: var(--yellow);
-        position: fixed;
     }
     .header-content{
         width: 90%;
@@ -23,8 +22,7 @@ header{
         @include display-flex;
         align-items: center;
         justify-content: space-between;
-        position: fixed;
-        top: 60px;
+        position: relative;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: var(--deepgreen);
@@ -88,11 +86,10 @@ header{
 section{
     display: grid;
     grid-template-columns: 20% auto;
-    margin-top: 40px;
+    margin-top: -25px;
 }
 nav{
     padding: 10px 20px;
-    margin-top: 5px;
     border-top-right-radius: 15px;
     background-color: var(--deepgreen);
     
